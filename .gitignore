@@ -1,6 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# ── Dependencies ─────────────────────────────────────────────────────────
 /node_modules
 /.pnp
 .pnp.*
@@ -10,32 +8,57 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
+# ── Build output ─────────────────────────────────────────────────────────
 /.next/
 /out/
-
-# production
 /build
+/dist
+*.tsbuildinfo
+next-env.d.ts
 
-# misc
-.DS_Store
-*.pem
+# ── Testing & coverage ───────────────────────────────────────────────────
+/coverage
+/.nyc_output
 
-# debug
+# ── Environment ──────────────────────────────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# `.env.example` is intentionally tracked as documentation.
+!.env.example
+
+# ── Caches & tooling ─────────────────────────────────────────────────────
+.eslintcache
+.cache/
+.turbo/
+.vercel
+.netlify
+
+# ── Logs ─────────────────────────────────────────────────────────────────
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# ── Editors ──────────────────────────────────────────────────────────────
+.idea/
+*.swp
+*.swo
+# Keep shared workspace settings, ignore personal overrides.
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
 
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# ── OS noise ─────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
