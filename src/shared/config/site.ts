@@ -5,7 +5,7 @@ export const SITE = {
   title: "Hasnath Jami Chowdhury — Android & Cross-Platform Engineer",
   description:
     "Software engineer in Dhaka building Android and cross-platform apps with Kotlin, Jetpack Compose and Flutter. Shipping products used by millions at Robi Axiata.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://hasnathjami.dev",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://hasnathjami.github.io",
   locale: "en_US",
   keywords: [
     "Android Developer",

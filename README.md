@@ -137,7 +137,11 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 
 **Netlify** — build `npm run build`, publish directory `out`.
 
-**GitHub Pages** — push `out/` to the `gh-pages` branch (add a `.nojekyll` file).
+**GitHub Pages** — `.github/workflows/deploy.yml` builds and publishes `out/` on
+every push to `master`. Enable it once under *Settings → Pages → Source: GitHub
+Actions*. The repo is a user site (`HasnathJami.github.io`), so it serves from
+the root and needs no `basePath`. To host it from a project repo instead, set
+`basePath` and `assetPrefix` to `/<repo-name>` for the static export.
 
 **Any nginx / Apache / cPanel host** — upload the contents of `out/` to the web
 root. `trailingSlash` is enabled, so clean URLs resolve to `index.html` without
