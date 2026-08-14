@@ -71,6 +71,8 @@ export const EXPERIENCES: readonly Experience[] = [
         name: "Akash SFA App",
         url: "https://play.google.com/store/apps/details?id=com.bizmotion.akash.v3",
       },
+      { name: "FMCG App" },
+      { name: "Pharma App" },
     ],
   },
 ] as const;
