@@ -41,7 +41,7 @@ export function ContactSection({ profile }: { profile: Profile }) {
                 {profile.email}
               </ActionLink>
               <ActionLink href={profile.resumeSrc} variant="secondary" download>
-                Download résumé
+                Download resume
               </ActionLink>
             </div>
 

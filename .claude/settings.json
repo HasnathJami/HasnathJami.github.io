@@ -13,7 +13,12 @@
       "Bash(node -e ' *)",
       "Bash(curl -s -o public/apps/robi-sfa/robi-sfa-icon.webp \"https://play-lh.googleusercontent.com/cQIbv7o76c8p3Ne-m9vZeVA-aiAEO65CfEJGn32BM7pp8iFUridh8HjJxXfk9VzP6PTr2xINf9gC4bDvBuaB5Ng=s256-rw\" -w \"status=%{http_code} size=%{size_download}\\\\n\")",
       "Bash(grep -oE 'play-lh\\\\.googleusercontent\\\\.com/[A-Za-z0-9_-]{40,}=w[0-9]+-h[0-9]+' /tmp/sfa.html | sed 's/.*=//' | sort | uniq -c | sort -rn | head)",
-      "Bash(awk '!seen[$0]++')"
+      "Bash(awk '!seen[$0]++')",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(curl -s \"https://api.github.com/repos/HasnathJami/HasnathJami.github.io/actions/runs?head_sha=75b039f4&per_page=1\")",
+      "Bash(curl -s http://localhost:3000/ -o /tmp/dev2.html -w \"page=%{http_code}\\\\n\")",
+      "Bash(curl -s \"https://api.github.com/repos/HasnathJami/HasnathJami.github.io/actions/runs?per_page=1\")"
     ]
   }
 }

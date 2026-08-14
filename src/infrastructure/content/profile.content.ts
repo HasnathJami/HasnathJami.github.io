@@ -59,7 +59,7 @@ export const PROFILE: Profile = {
     },
     {
       id: "apps",
-      value: "5",
+      value: "6",
       label: "Published apps",
       caption: "Professional and personal, all live",
     },

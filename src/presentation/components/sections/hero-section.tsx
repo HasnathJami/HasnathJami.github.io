@@ -62,7 +62,7 @@ export function HeroSection({ profile, apps }: HeroSectionProps) {
                 </ActionLink>
                 <ActionLink href={profile.resumeSrc} variant="secondary" download>
                   <Download className="h-4 w-4" />
-                  Résumé
+                  Resume
                 </ActionLink>
 
                 <div className="flex items-center gap-2">

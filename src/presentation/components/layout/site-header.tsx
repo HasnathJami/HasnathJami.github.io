@@ -77,7 +77,7 @@ export function SiteHeader({ shortName, resumeSrc }: SiteHeaderProps) {
             download
             className="hidden rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-on transition-colors duration-200 hover:bg-accent-hover sm:inline-flex"
           >
-            Résumé
+            Resume
           </a>
           <button
             type="button"
@@ -116,7 +116,7 @@ export function SiteHeader({ shortName, resumeSrc }: SiteHeaderProps) {
               onClick={() => setMenuOpen(false)}
               className="mt-4 rounded-full bg-accent px-4 py-3 text-center text-sm font-medium text-accent-on"
             >
-              Download résumé
+              Download resume
             </a>
           </nav>
         </div>

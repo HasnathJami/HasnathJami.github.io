@@ -41,10 +41,13 @@ export const COMPETITIVE_RECORD: CompetitiveRecord = {
   summary:
     "Solved 503+ problems and competed in multiple online programming contests across renowned judges.",
   judges: [
-    { name: "LeetCode", url: "https://leetcode.com/" },
-    { name: "CodeChef", url: "https://www.codechef.com/" },
-    { name: "HackerRank", url: "https://www.hackerrank.com/" },
-    { name: "GeeksForGeeks", url: "https://www.geeksforgeeks.org/" },
-    { name: "Toph", url: "https://toph.co/" },
+    { name: "LeetCode", url: "https://leetcode.com/u/jishanc46" },
+    { name: "CodeChef", url: "https://www.codechef.com/users/jishanc46" },
+    { name: "HackerRank", url: "https://www.hackerrank.com/profile/jishanc46" },
+    {
+      name: "GeeksForGeeks",
+      url: "https://www.geeksforgeeks.org/profile/jishanc46",
+    },
+    { name: "Toph", url: "https://toph.co/u/HasnathJami" },
   ],
 };

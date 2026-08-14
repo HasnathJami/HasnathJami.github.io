@@ -63,7 +63,7 @@ export function SiteFooter({ profile }: { profile: Profile }) {
               download
               className="inline-flex items-center gap-1 text-sm text-ink-muted transition-colors hover:text-accent"
             >
-              Résumé <ArrowUpRight className="h-3.5 w-3.5" />
+              Resume <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </nav>
         </div>
