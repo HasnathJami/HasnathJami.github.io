@@ -169,31 +169,35 @@ function PortraitCard({
         </div>
       </div>
 
-      <ul className="absolute -left-6 top-1/4 hidden flex-col gap-3 sm:flex">
-        {apps.slice(0, 4).map((app, index) => (
-          <li
-            key={app.id}
-            className="animate-drift rounded-2xl border border-line bg-canvas/90 p-1.5 shadow-card backdrop-blur"
-            style={{ animationDelay: `${index * -3.5}s` }}
-          >
-            <a
-              href={app.playStoreUrl}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label={`${app.name} on Google Play`}
-              className="block transition-transform duration-200 hover:scale-110"
+      {/* Sized to the square portrait so the column centres on the photo and
+          never runs into the "Currently" strip below it. */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 aspect-square">
+        <ul className="pointer-events-auto absolute -left-6 top-1/2 hidden -translate-y-1/2 flex-col items-center gap-3 sm:flex">
+          {apps.slice(0, 4).map((app, index) => (
+            <li
+              key={app.id}
+              className="animate-drift rounded-2xl border border-line bg-canvas/90 p-1.5 shadow-card backdrop-blur"
+              style={{ animationDelay: `${index * -3.5}s` }}
             >
-              <Image
-                src={app.iconSrc}
-                alt={`${app.name} app icon`}
-                width={40}
-                height={40}
-                className="h-9 w-9 rounded-xl"
-              />
-            </a>
-          </li>
-        ))}
-      </ul>
+              <a
+                href={app.playStoreUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={`${app.name} on Google Play`}
+                className="block transition-transform duration-200 hover:scale-110"
+              >
+                <Image
+                  src={app.iconSrc}
+                  alt={`${app.name} app icon`}
+                  width={40}
+                  height={40}
+                  className="h-9 w-9 rounded-xl"
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
