@@ -7,6 +7,15 @@ laid out in clean-architecture layers.
 Live sections: hero → experience → shipped apps (with Google Play screenshots)
 → open source → skills → about → contact.
 
+## Shipped apps (Google Play)
+
+- [Binge — Bangladesh's flagship OTT streaming platform](https://play.google.com/store/apps/details?id=buzz.binge.mobile) — I rebuilt the native Android and Android TV experiences (Jetpack Compose), built an embeddable playback SDK, and supported ongoing releases. 5M+ installs.
+- [BDTICKETS — Nationwide bus, launch and event ticketing](https://play.google.com/store/apps/details?id=com.bluetech.bdtickets.launcher) — Rebuilt the app UI in Flutter on a BLoC + Clean Architecture foundation, delivering a consistent booking experience. 500K+ installs.
+- [Smart Ummah — AI-assisted Islamic companion](https://play.google.com/store/apps/details?id=com.jaxenlabs.smartummah) — Voice-powered search, prayer-time & Qibla tools. Designed, built and published the whole product solo (Compose Multiplatform + Go backend). 4.7★ rating.
+- [Baby Shop — Production kids-fashion commerce app](https://play.google.com/store/apps/details?id=com.babyshopltd.app) — Built the storefront, modelled the Supabase backend and handled the Play Store release. 1K+ installs.
+- [Akash SFA App — Field sales-force automation for Akash DTH](https://play.google.com/store/apps/details?id=com.bizmotion.akash.v3) — Developed features and UI improvements for onboarding, order capture and territory reporting on the native Java app.
+- [Robi-SFA — Location-aware sales-force automation for Robi's field teams](https://play.google.com/store/apps/details?id=com.reddotdigitalit.sfa) — Modernised the UI in Kotlin & Jetpack Compose, restructured the codebase for modularity and added location-aware workflows.
+
 ---
 
 ## Stack
@@ -51,7 +60,7 @@ src/
 │   │   ├── layout/          Header, footer, theme toggle.
 │   │   └── sections/        One component per page section.
 │   ├── hooks/               useActiveSection, useScrolled.
-│   └── providers/           Theme provider.
+│   │   └── providers/           Theme provider.
 │
 ├── shared/                  Cross-cutting: site config, `cn()` helper.
 └── app/                     Next.js routing, metadata, sitemap, OG image.
