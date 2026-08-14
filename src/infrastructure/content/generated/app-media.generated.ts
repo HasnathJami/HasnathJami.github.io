@@ -43,6 +43,9 @@ export const APP_SCREENSHOTS: Readonly<Record<string, readonly RawScreenshot[]>>
     { src: "/apps/binge/binge-5.webp", width: 540, height: 1101, index: 5 },
     { src: "/apps/binge/binge-6.webp", width: 512, height: 910, index: 6 },
   ],
+  "robi-sfa": [
+
+  ],
   "smart-ummah": [
     { src: "/apps/smart-ummah/smart-ummah-1.webp", width: 540, height: 1069, index: 1 },
     { src: "/apps/smart-ummah/smart-ummah-2.webp", width: 540, height: 1071, index: 2 },

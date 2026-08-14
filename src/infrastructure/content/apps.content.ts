@@ -157,4 +157,35 @@ export const APPS: readonly AppProduct[] = [
     metrics: {},
     accentRgb: "232 132 44",
   },
+  {
+    id: "robi-sfa",
+    slug: "robi-sfa",
+    name: "Robi-SFA",
+    tagline: "Location-aware sales-force automation for Robi's field teams",
+    description:
+      "Robi's enterprise sales-force automation app, used by field officers for route planning, order capture and territory reporting. I modernised its UI in Kotlin and Jetpack Compose and restructured the codebase on Clean Architecture, turning a legacy enterprise app into a modular, decoupled and testable one with location-aware workflows.",
+    origin: "professional",
+    organisation: "Red.Digital Ltd. (Robi Axiata)",
+    packageName: "com.reddotdigitalit.sfa",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.reddotdigitalit.sfa",
+    iconSrc: "/apps/robi-sfa/robi-sfa-icon.webp",
+    screenshots: screenshotsFor("robi-sfa", "Robi-SFA"),
+    stack: [
+      "Kotlin",
+      "Jetpack Compose",
+      "Clean Architecture",
+      "Coroutines & Flow",
+      "Hilt",
+      "Location Services",
+      "MVVM",
+    ],
+    contributions: [
+      "Modernised the field-force UI in Jetpack Compose, replacing legacy screens.",
+      "Restructured the codebase on Clean Architecture for modularity and testability.",
+      "Built location-aware workflows for field officers working across territories.",
+    ],
+    metrics: {},
+    accentRgb: "176 31 56",
+  },
 ] as const;

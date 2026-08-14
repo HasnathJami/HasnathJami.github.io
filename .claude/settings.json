@@ -6,7 +6,14 @@
       "Bash(curl -s \"https://api.github.com/repos/HasnathJami/HasnathJami.github.io/actions/runs?per_page=3\")",
       "Bash(curl -s -L https://hasnathjami.github.io/ -o /tmp/live.html -w \"status=%{http_code} size=%{size_download}\\\\n\")",
       "Read(//tmp/**)",
-      "Bash(curl -s \"https://api.github.com/repos/HasnathJami/HasnathJami.github.io/deployments?per_page=5\")"
+      "Bash(curl -s \"https://api.github.com/repos/HasnathJami/HasnathJami.github.io/deployments?per_page=5\")",
+      "Bash(curl -s -A \"Mozilla/5.0\" \"https://play.google.com/store/apps/details?id=com.reddotdigitalit.sfa&hl=en_US\" -o /tmp/sfa.html -w \"status=%{http_code}\\\\n\")",
+      "Bash(grep -oE 'https://play-lh\\\\.googleusercontent\\\\.com/[A-Za-z0-9_-]+=w240-h480' /tmp/sfa.html | head -3; echo \"--- installs/rating ---\"; grep -oE '\"[0-9,.]+[KMB]?\\\\+?\"' /tmp/sfa.html | head -8; grep -oE '[0-9]+\\\\.[0-9]star' /tmp/sfa.html | head -3)",
+      "Bash(curl -s -o public/apps/robi-sfa/robi-sfa-icon.webp \"https://play-lh.googleusercontent.com/cQIbv7o76c8p3Ne-m9vZeVA-aiAEO65CfEJGn32BM7pp8iFUridh8HjJxXfk9VzP6PTr2xINf9gC4bDvBuaB5Ng=s512-rw\" -w \"icon status=%{http_code} size=%{size_download}\\\\n\")",
+      "Bash(node -e ' *)",
+      "Bash(curl -s -o public/apps/robi-sfa/robi-sfa-icon.webp \"https://play-lh.googleusercontent.com/cQIbv7o76c8p3Ne-m9vZeVA-aiAEO65CfEJGn32BM7pp8iFUridh8HjJxXfk9VzP6PTr2xINf9gC4bDvBuaB5Ng=s256-rw\" -w \"status=%{http_code} size=%{size_download}\\\\n\")",
+      "Bash(grep -oE 'play-lh\\\\.googleusercontent\\\\.com/[A-Za-z0-9_-]{40,}=w[0-9]+-h[0-9]+' /tmp/sfa.html | sed 's/.*=//' | sort | uniq -c | sort -rn | head)",
+      "Bash(awk '!seen[$0]++')"
     ]
   }
 }

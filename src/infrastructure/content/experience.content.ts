@@ -38,7 +38,10 @@ export const EXPERIENCES: readonly Experience[] = [
         name: "BDTICKETS",
         url: "https://play.google.com/store/apps/details?id=com.bluetech.bdtickets.launcher",
       },
-      { name: "Robi-SFA" },
+      {
+        name: "Robi-SFA",
+        url: "https://play.google.com/store/apps/details?id=com.reddotdigitalit.sfa",
+      },
       { name: "My Robi" },
       { name: "My Airtel" },
     ],
