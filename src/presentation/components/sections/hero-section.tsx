@@ -170,19 +170,27 @@ function PortraitCard({
       </div>
 
       <ul className="absolute -left-6 top-1/4 hidden flex-col gap-3 sm:flex">
-        {apps.slice(0, 3).map((app, index) => (
+        {apps.slice(0, 4).map((app, index) => (
           <li
             key={app.id}
             className="animate-drift rounded-2xl border border-line bg-canvas/90 p-1.5 shadow-card backdrop-blur"
             style={{ animationDelay: `${index * -3.5}s` }}
           >
-            <Image
-              src={app.iconSrc}
-              alt={`${app.name} app icon`}
-              width={40}
-              height={40}
-              className="h-9 w-9 rounded-xl"
-            />
+            <a
+              href={app.playStoreUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label={`${app.name} on Google Play`}
+              className="block transition-transform duration-200 hover:scale-110"
+            >
+              <Image
+                src={app.iconSrc}
+                alt={`${app.name} app icon`}
+                width={40}
+                height={40}
+                className="h-9 w-9 rounded-xl"
+              />
+            </a>
           </li>
         ))}
       </ul>
